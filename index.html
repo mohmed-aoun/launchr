@@ -412,7 +412,159 @@
         <button class="text-slate-500 hover:text-slate-900" data-modal-close>&times;</button>
       </div>
       <div id="modal-corporate-content" class="h-full overflow-auto p-6 text-slate-600">
-        <!-- Corporate preview HTML will be injected into #modal-corporate-content -->
+        <header class="border-b border-slate-200 bg-white">
+          <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="text-xl font-semibold text-slate-800">CompanyName</div>
+            <nav class="flex items-center space-x-8 text-sm font-medium text-slate-600">
+              <a href="#solutions" class="hover:text-slate-900">Solutions</a>
+              <a href="#pricing" class="hover:text-slate-900">Pricing</a>
+              <a href="#about" class="hover:text-slate-900">About</a>
+            </nav>
+            <a href="#contact" class="px-4 py-2 rounded-md bg-blue-600 text-white text-sm font-semibold shadow-sm hover:bg-blue-700">Request Proposal</a>
+          </div>
+        </header>
+      
+        <main class="max-w-6xl mx-auto px-6">
+          <section class="grid grid-cols-1 md:grid-cols-2 gap-10 py-14 items-center">
+            <div class="space-y-6">
+              <p class="text-blue-600 font-semibold text-sm tracking-wide uppercase">Corporate Hero</p>
+              <h1 class="text-4xl font-bold text-slate-900 leading-tight">Your business deserves a smarter landing page.</h1>
+              <p class="text-lg text-slate-600">Built for clarity, professionalism, and measurable results.</p>
+              <div class="flex space-x-3">
+                <a href="#contact" class="px-5 py-3 rounded-md bg-blue-600 text-white font-semibold shadow-sm hover:bg-blue-700">Request Proposal</a>
+                <a href="#cases" class="px-5 py-3 rounded-md border border-slate-200 text-slate-800 font-semibold hover:border-blue-600 hover:text-blue-700">View Case Studies</a>
+              </div>
+            </div>
+            <div class="bg-white border border-slate-200 rounded-lg shadow-sm h-full flex items-center justify-center p-8">
+              <div class="w-full h-64 bg-slate-50 border border-dashed border-slate-200 rounded-md flex items-center justify-center text-slate-400 text-sm">Analytics &amp; dashboard preview</div>
+            </div>
+          </section>
+      
+          <section class="grid grid-cols-1 md:grid-cols-3 gap-6 py-10" id="solutions">
+            <div class="bg-white border border-slate-200 rounded-md shadow-sm p-6 space-y-2">
+              <h3 class="text-lg font-semibold text-slate-900">Clear Communication</h3>
+              <p class="text-sm text-slate-600">Explain your value simply.</p>
+            </div>
+            <div class="bg-white border border-slate-200 rounded-md shadow-sm p-6 space-y-2">
+              <h3 class="text-lg font-semibold text-slate-900">Conversion Focused</h3>
+              <p class="text-sm text-slate-600">Designed to generate leads.</p>
+            </div>
+            <div class="bg-white border border-slate-200 rounded-md shadow-sm p-6 space-y-2">
+              <h3 class="text-lg font-semibold text-slate-900">Professional Look</h3>
+              <p class="text-sm text-slate-600">Modern layouts for modern brands.</p>
+            </div>
+          </section>
+      
+          <section class="grid grid-cols-1 md:grid-cols-2 gap-10 py-14" id="about">
+            <div class="space-y-4">
+              <p class="text-blue-600 font-semibold text-sm tracking-wide uppercase">Value Proposition</p>
+              <h2 class="text-2xl font-bold text-slate-900">Why Teams Trust Us</h2>
+            </div>
+            <div class="space-y-4">
+              <p class="text-slate-700">We create landing experiences that communicate your strengths and guide decision-makers to action.</p>
+              <ul class="space-y-2 text-slate-700 list-disc list-inside">
+                <li>Strategic messaging</li>
+                <li>Clean page architecture</li>
+                <li>Optimized for B2B buyers</li>
+                <li>Mobile responsive structure</li>
+              </ul>
+            </div>
+          </section>
+      
+          <section class="grid grid-cols-1 md:grid-cols-3 gap-6 py-10">
+            <div class="bg-white border border-slate-200 rounded-md shadow-sm p-6 text-center space-y-2">
+              <p class="text-3xl font-bold text-blue-600">+42%</p>
+              <p class="text-sm text-slate-600">Qualified Leads</p>
+            </div>
+            <div class="bg-white border border-slate-200 rounded-md shadow-sm p-6 text-center space-y-2">
+              <p class="text-3xl font-bold text-blue-600">3.1x</p>
+              <p class="text-sm text-slate-600">Better Engagement</p>
+            </div>
+            <div class="bg-white border border-slate-200 rounded-md shadow-sm p-6 text-center space-y-2">
+              <p class="text-3xl font-bold text-blue-600">Fast</p>
+              <p class="text-sm text-slate-600">Turnaround</p>
+            </div>
+          </section>
+      
+          <section class="py-14">
+            <div class="bg-white border border-slate-200 rounded-lg shadow-sm p-8 flex items-center space-x-6">
+              <div class="w-16 h-16 rounded-full bg-slate-100 border border-slate-200"></div>
+              <div class="space-y-3">
+                <p class="text-lg text-slate-800 italic">“This helped simplify our value proposition across the entire team.”</p>
+                <p class="text-sm font-semibold text-slate-900">Name Placeholder, Operations Lead</p>
+              </div>
+            </div>
+          </section>
+      
+          <section class="grid grid-cols-1 md:grid-cols-2 gap-6 py-14" id="pricing">
+            <div class="bg-white border border-slate-200 rounded-lg shadow-sm p-8 space-y-4">
+              <div>
+                <p class="text-sm font-semibold text-blue-600">Professional</p>
+                <h3 class="text-xl font-bold text-slate-900">For established teams</h3>
+              </div>
+              <p class="text-slate-700">Balanced deliverables and communication tailored to steady-state operations.</p>
+              <ul class="space-y-2 text-slate-700 list-disc list-inside">
+                <li>Page frameworks and messaging</li>
+                <li>Weekly review cadence</li>
+                <li>Analytics-ready structure</li>
+              </ul>
+              <a href="#contact" class="inline-block px-4 py-2 rounded-md bg-blue-600 text-white font-semibold shadow-sm hover:bg-blue-700">Request Proposal</a>
+            </div>
+            <div class="bg-white border border-blue-200 rounded-lg shadow-md p-8 space-y-4">
+              <div>
+                <p class="text-sm font-semibold text-blue-600">Growth</p>
+                <h3 class="text-xl font-bold text-slate-900">For scaling operations</h3>
+              </div>
+              <p class="text-slate-700">Dedicated support for teams expanding into new markets or product lines.</p>
+              <ul class="space-y-2 text-slate-700 list-disc list-inside">
+                <li>Multi-page experiments</li>
+                <li>Conversion-focused iterations</li>
+                <li>Leadership-ready reporting</li>
+              </ul>
+              <a href="#contact" class="inline-block px-4 py-2 rounded-md bg-blue-600 text-white font-semibold shadow-sm hover:bg-blue-700">Request Proposal</a>
+            </div>
+          </section>
+        </main>
+      
+        <section class="bg-slate-900 text-white py-14">
+          <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
+            <div class="space-y-3">
+              <h2 class="text-2xl font-bold">Let’s build your next high-performing page.</h2>
+              <p class="text-slate-200">Aligned teams, clear messaging, and measurable outcomes.</p>
+            </div>
+            <a href="#contact" class="px-5 py-3 rounded-md bg-blue-500 text-white font-semibold shadow-sm hover:bg-blue-600">Request Proposal</a>
+          </div>
+        </section>
+      
+        <footer class="bg-white border-t border-slate-200">
+          <div class="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-slate-700">
+            <div>
+              <h4 class="font-semibold text-slate-900 mb-3">Company</h4>
+              <ul class="space-y-2">
+                <li><a href="#" class="hover:text-blue-600">About</a></li>
+                <li><a href="#" class="hover:text-blue-600">Careers</a></li>
+                <li><a href="#" class="hover:text-blue-600">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold text-slate-900 mb-3">Solutions</h4>
+              <ul class="space-y-2">
+                <li><a href="#" class="hover:text-blue-600">Landing Systems</a></li>
+                <li><a href="#" class="hover:text-blue-600">Conversion Strategy</a></li>
+                <li><a href="#" class="hover:text-blue-600">Analytics Setup</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold text-slate-900 mb-3">Resources</h4>
+              <ul class="space-y-2">
+                <li><a href="#" class="hover:text-blue-600">Case Studies</a></li>
+                <li><a href="#" class="hover:text-blue-600">Guides</a></li>
+                <li><a href="#" class="hover:text-blue-600">Webinars</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="border-t border-slate-200 py-4 text-center text-xs text-slate-500">© 2024 CompanyName. All rights reserved.</div>
+        </footer>
       </div>
     </div>
   </div>
@@ -424,7 +576,136 @@
         <button class="text-slate-500 hover:text-slate-900" data-modal-close>&times;</button>
       </div>
       <div id="modal-local-content" class="h-full overflow-auto p-6 text-slate-600">
-        <!-- Local Service preview HTML will be injected into #modal-local-content -->
+        <!-- Top Call Now Bar -->
+        <div class="w-full bg-[#F97316] text-white text-center py-3">
+          <p class="font-semibold">Need fast service? Call now: (555) 123-4567</p>
+        </div>
+      
+        <main class="max-w-6xl mx-auto px-6 py-12 space-y-16">
+          <!-- Hero Section -->
+          <section class="grid md:grid-cols-2 gap-10 items-center">
+            <div class="space-y-6">
+              <h1 class="text-4xl md:text-5xl font-bold leading-tight">Your reliable local service partner.</h1>
+              <p class="text-lg text-gray-700">Fast, affordable, and done right the first time.</p>
+              <div class="flex items-center gap-6">
+                <a href="#quote" class="px-6 py-3 bg-[#F97316] text-white font-semibold rounded-lg shadow hover:opacity-90">Get a Free Quote</a>
+                <a href="#services" class="text-[#F97316] font-semibold">See Services</a>
+              </div>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-xl h-72 flex items-center justify-center shadow">
+              <div class="w-full h-full bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 text-lg">Worker / Service Image</div>
+            </div>
+          </section>
+      
+          <!-- Badge Strip -->
+          <section class="bg-white border border-gray-200 rounded-xl shadow px-6 py-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 text-center text-sm font-semibold text-gray-700">
+              <div class="bg-[#F8FAFC] rounded-lg py-3">Licensed &amp; Insured</div>
+              <div class="bg-[#F8FAFC] rounded-lg py-3">Same-Day Service</div>
+              <div class="bg-[#F8FAFC] rounded-lg py-3">5-Star Rated</div>
+              <div class="bg-[#F8FAFC] rounded-lg py-3">Locally Trusted</div>
+              <div class="bg-[#F8FAFC] rounded-lg py-3">Friendly Technicians</div>
+            </div>
+          </section>
+      
+          <!-- Services Section -->
+          <section id="services" class="space-y-8">
+            <div class="flex items-center justify-between">
+              <h2 class="text-3xl font-bold">Our Services</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+              <div class="bg-white border border-gray-200 rounded-xl p-6 shadow space-y-3">
+                <h3 class="text-xl font-semibold">Home Repairs</h3>
+                <p class="text-gray-700">Quick fixes for leaks, squeaks, and everyday issues.</p>
+              </div>
+              <div class="bg-white border border-gray-200 rounded-xl p-6 shadow space-y-3">
+                <h3 class="text-xl font-semibold">Cleaning Services</h3>
+                <p class="text-gray-700">Sparkling interiors with flexible scheduling.</p>
+              </div>
+              <div class="bg-white border border-gray-200 rounded-xl p-6 shadow space-y-3">
+                <h3 class="text-xl font-semibold">Installations</h3>
+                <p class="text-gray-700">Appliances, fixtures, and smart home setups done right.</p>
+              </div>
+              <div class="bg-white border border-gray-200 rounded-xl p-6 shadow space-y-3">
+                <h3 class="text-xl font-semibold">Emergency Fixes</h3>
+                <p class="text-gray-700">Fast response when you need immediate help.</p>
+              </div>
+              <div class="bg-white border border-gray-200 rounded-xl p-6 shadow space-y-3">
+                <h3 class="text-xl font-semibold">Maintenance</h3>
+                <p class="text-gray-700">Seasonal tune-ups that keep things running smoothly.</p>
+              </div>
+              <div class="bg-white border border-gray-200 rounded-xl p-6 shadow space-y-3">
+                <h3 class="text-xl font-semibold">Custom Work</h3>
+                <p class="text-gray-700">Tailored solutions for unique projects.</p>
+              </div>
+            </div>
+          </section>
+      
+          <!-- Before/After Preview -->
+          <section class="space-y-6">
+            <h2 class="text-3xl font-bold">See the difference quality makes.</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-white border border-gray-200 rounded-xl h-64 flex items-center justify-center shadow">
+                <div class="w-full h-full bg-gray-200 rounded-lg flex items-center justify-center text-gray-600 text-lg">Before</div>
+              </div>
+              <div class="bg-white border border-gray-200 rounded-xl h-64 flex items-center justify-center shadow">
+                <div class="w-full h-full bg-gray-100 rounded-lg flex items-center justify-center text-gray-700 text-lg">After</div>
+              </div>
+            </div>
+          </section>
+      
+          <!-- Reviews Section -->
+          <section class="space-y-8">
+            <h2 class="text-3xl font-bold">Reviews from neighbors</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+              <div class="bg-white border border-gray-200 rounded-xl p-6 shadow space-y-3">
+                <div class="text-[#F97316]">★★★★★</div>
+                <p class="text-gray-700">“They arrived on time and did an amazing job!”</p>
+                <p class="text-sm text-gray-500">— Taylor H.</p>
+              </div>
+              <div class="bg-white border border-gray-200 rounded-xl p-6 shadow space-y-3">
+                <div class="text-[#F97316]">★★★★★</div>
+                <p class="text-gray-700">“Friendly crew and transparent pricing. Highly recommend.”</p>
+                <p class="text-sm text-gray-500">— Morgan L.</p>
+              </div>
+              <div class="bg-white border border-gray-200 rounded-xl p-6 shadow space-y-3">
+                <div class="text-[#F97316]">★★★★★</div>
+                <p class="text-gray-700">“Quality work completed faster than we expected.”</p>
+                <p class="text-sm text-gray-500">— Jamie R.</p>
+              </div>
+            </div>
+          </section>
+      
+          <!-- Service Area Map -->
+          <section class="space-y-4">
+            <div class="flex items-center justify-between">
+              <h2 class="text-3xl font-bold">Service Area</h2>
+              <span class="text-sm text-gray-600">Proudly serving your area.</span>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-xl h-72 flex items-center justify-center shadow">
+              <div class="w-full h-full bg-gray-200 rounded-lg flex items-center justify-center text-gray-600 text-lg">Map Placeholder</div>
+            </div>
+          </section>
+      
+          <!-- Final CTA -->
+          <section class="bg-white border border-gray-200 rounded-xl shadow px-8 py-10 text-center space-y-4" id="quote">
+            <h2 class="text-3xl font-bold">Ready to schedule your service?</h2>
+            <div class="flex flex-col items-center gap-3">
+              <a href="#" class="px-8 py-3 bg-[#F97316] text-white font-semibold rounded-lg shadow hover:opacity-90">Get a Free Quote</a>
+              <p class="text-gray-700">Or call: (555) 123-4567</p>
+            </div>
+          </section>
+        </main>
+      
+        <!-- Footer -->
+        <footer class="bg-[#111111] text-white py-6">
+          <div class="max-w-6xl mx-auto px-6 flex flex-wrap gap-4 text-sm">
+            <a href="#" class="hover:text-[#F97316]">Home</a>
+            <a href="#services" class="hover:text-[#F97316]">Services</a>
+            <a href="#" class="hover:text-[#F97316]">Reviews</a>
+            <a href="#quote" class="hover:text-[#F97316]">Contact</a>
+          </div>
+        </footer>
       </div>
     </div>
   </div>
@@ -436,7 +717,158 @@
         <button class="text-slate-500 hover:text-slate-900" data-modal-close>&times;</button>
       </div>
       <div id="modal-direct-response-content" class="h-full overflow-auto p-6 text-slate-600">
-        <!-- Direct Response preview HTML will be injected into #modal-direct-response-content -->
+        <header class="bg-[#0F0F0F] text-white">
+        <div class="max-w-6xl mx-auto px-6 py-16 flex flex-col gap-6">
+          <div class="space-y-4">
+            <p class="text-sm uppercase tracking-widest text-gray-300">Direct response funnel</p>
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight">Get a landing page that sells.</h1>
+            <p class="text-lg md:text-xl text-gray-200">Optimized for conversions, built fast, and driven by proven frameworks.</p>
+          </div>
+          <div class="flex flex-wrap items-center gap-4">
+            <a href="#cta" class="bg-[#DC2626] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md shadow-lg transition">Get My Page</a>
+            <a href="#offer" class="text-white underline underline-offset-4 font-semibold">See What’s Included</a>
+          </div>
+          <div class="flex flex-wrap gap-4 text-sm text-gray-300">
+            <span class="px-3 py-2 border border-gray-700 rounded">Trusted by 500+ creators</span>
+            <span class="px-3 py-2 border border-gray-700 rounded">Proven high-conversion layouts</span>
+          </div>
+        </div>
+      </header>
+    
+      <main class="space-y-16">
+        <section class="bg-white">
+          <div class="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-8 items-center">
+            <div class="bg-gray-100 p-6 rounded-lg shadow-sm">
+              <h2 class="text-2xl md:text-3xl font-bold text-[#0F0F0F] mb-3">Struggling to convert traffic?</h2>
+              <p class="text-gray-700">Stop guessing and start using a layout that guides visitors toward action. Clear messaging and strategic placement keep attention where it counts.</p>
+            </div>
+            <div class="bg-[#1A1A1A] text-white p-6 rounded-lg shadow-sm">
+              <h3 class="text-2xl md:text-3xl font-bold mb-3">Get a page engineered for action.</h3>
+              <p class="text-gray-200">We map your offer to a direct response framework, make the CTA unmistakable, and remove friction so the next click becomes an easy yes.</p>
+            </div>
+          </div>
+        </section>
+    
+        <section id="offer" class="bg-[#0F0F0F] py-14">
+          <div class="max-w-6xl mx-auto px-6 space-y-8">
+            <div class="flex items-center gap-3">
+              <div class="w-1 h-10 bg-[#DC2626]"></div>
+              <h2 class="text-3xl font-bold text-white">What You Get</h2>
+            </div>
+            <div class="grid md:grid-cols-5 gap-6">
+              <div class="md:col-span-1"></div>
+              <div class="md:col-span-4 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-white p-5 rounded-lg shadow flex items-start gap-3">
+                  <span class="text-[#DC2626] font-bold">01</span>
+                  <p class="text-lg font-semibold text-[#0F0F0F]">High-converting layout</p>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow flex items-start gap-3">
+                  <span class="text-[#DC2626] font-bold">02</span>
+                  <p class="text-lg font-semibold text-[#0F0F0F]">Clear messaging</p>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow flex items-start gap-3">
+                  <span class="text-[#DC2626] font-bold">03</span>
+                  <p class="text-lg font-semibold text-[#0F0F0F]">Strong CTA placement</p>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow flex items-start gap-3">
+                  <span class="text-[#DC2626] font-bold">04</span>
+                  <p class="text-lg font-semibold text-[#0F0F0F]">Mobile-first design</p>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow flex items-start gap-3">
+                  <span class="text-[#DC2626] font-bold">05</span>
+                  <p class="text-lg font-semibold text-[#0F0F0F]">Psychology-backed structure</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <section class="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-6">
+          <div class="border-2 border-[#0F0F0F] p-6 rounded-lg bg-white">
+            <h3 class="text-2xl font-bold text-[#0F0F0F] mb-2">Before: Low conversions</h3>
+            <p class="text-gray-700">Confusing offers, weak calls to action, and wasted ad spend.</p>
+          </div>
+          <div class="border-2 border-[#DC2626] p-6 rounded-lg bg-white">
+            <h3 class="text-2xl font-bold text-[#0F0F0F] mb-2">After: Clarity + action</h3>
+            <p class="text-gray-700">Clear narrative, bold CTAs, and persuasive proof that moves visitors to buy.</p>
+          </div>
+        </section>
+    
+        <section class="bg-[#1A1A1A] text-white py-12">
+          <div class="max-w-6xl mx-auto px-6 space-y-6">
+            <div class="flex items-center gap-3">
+              <div class="w-1 h-10 bg-[#DC2626]"></div>
+              <h2 class="text-3xl font-bold">What clients say</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+              <div class="bg-[#0F0F0F] p-6 rounded-lg border border-gray-800 space-y-4">
+                <div class="flex items-center gap-1 text-[#DC2626]">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.143 3.513a1 1 0 00.95.69h3.688c.969 0 1.371 1.24.588 1.81l-2.985 2.168a1 1 0 00-.364 1.118l1.143 3.512c.3.922-.755 1.688-1.54 1.118l-2.985-2.168a1 1 0 00-1.175 0l-2.985 2.168c-.784.57-1.838-.196-1.539-1.118l1.142-3.512a1 1 0 00-.364-1.118L2.68 8.94c-.783-.57-.38-1.81.588-1.81h3.689a1 1 0 00.95-.69l1.142-3.513z" /></svg>
+                  <span class="font-semibold">5.0</span>
+                </div>
+                <p class="text-lg">“Our conversions doubled in under two weeks.”</p>
+                <p class="text-sm text-gray-300">Alex, course creator</p>
+              </div>
+              <div class="bg-[#0F0F0F] p-6 rounded-lg border border-gray-800 space-y-4">
+                <div class="flex items-center gap-1 text-[#DC2626]">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.143 3.513a1 1 0 00.95.69h3.688c.969 0 1.371 1.24.588 1.81l-2.985 2.168a1 1 0 00-.364 1.118l1.143 3.512c.3.922-.755 1.688-1.54 1.118l-2.985-2.168a1 1 0 00-1.175 0l-2.985 2.168c-.784.57-1.838-.196-1.539-1.118l1.142-3.512a1 1 0 00-.364-1.118L2.68 8.94c-.783-.57-.38-1.81.588-1.81h3.689a1 1 0 00.95-.69l1.142-3.513z" /></svg>
+                  <span class="font-semibold">5.0</span>
+                </div>
+                <p class="text-lg">“Every section points straight to the sale. Exactly what we needed.”</p>
+                <p class="text-sm text-gray-300">Jordan, agency owner</p>
+              </div>
+              <div class="bg-[#0F0F0F] p-6 rounded-lg border border-gray-800 space-y-4">
+                <div class="flex items-center gap-1 text-[#DC2626]">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.143 3.513a1 1 0 00.95.69h3.688c.969 0 1.371 1.24.588 1.81l-2.985 2.168a1 1 0 00-.364 1.118l1.143 3.512c.3.922-.755 1.688-1.54 1.118l-2.985-2.168a1 1 0 00-1.175 0l-2.985 2.168c-.784.57-1.838-.196-1.539-1.118l1.142-3.512a1 1 0 00-.364-1.118L2.68 8.94c-.783-.57-.38-1.81.588-1.81h3.689a1 1 0 00.95-.69l1.142-3.513z" /></svg>
+                  <span class="font-semibold">5.0</span>
+                </div>
+                <p class="text-lg">“Launch-ready in days with messaging that finally clicks.”</p>
+                <p class="text-sm text-gray-300">Taylor, coach</p>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <section id="cta" class="max-w-6xl mx-auto px-6 py-12 grid lg:grid-cols-3 gap-8 items-start">
+          <div class="bg-gray-100 rounded-lg h-48 flex items-center justify-center text-gray-600 border border-gray-200">Visual Placeholder</div>
+          <div class="bg-white rounded-lg p-6 shadow border border-gray-200">
+            <h3 class="text-2xl font-bold text-[#0F0F0F] mb-4">Here’s everything included</h3>
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex gap-3 items-start"><span class="text-[#DC2626] font-bold">•</span><span>Headline, subheadline, and offer copy crafted for clarity.</span></li>
+              <li class="flex gap-3 items-start"><span class="text-[#DC2626] font-bold">•</span><span>CTA strategy with above-the-fold buttons and supporting prompts.</span></li>
+              <li class="flex gap-3 items-start"><span class="text-[#DC2626] font-bold">•</span><span>Credibility cues, testimonials, and guarantee placements.</span></li>
+              <li class="flex gap-3 items-start"><span class="text-[#DC2626] font-bold">•</span><span>Conversion-focused mobile experience.</span></li>
+            </ul>
+          </div>
+          <div class="bg-[#0F0F0F] text-white rounded-lg p-6 shadow space-y-3 border border-gray-800">
+            <h4 class="text-xl font-bold">Perfect for</h4>
+            <ul class="space-y-2 text-gray-200">
+              <li class="flex gap-3"><span class="text-[#DC2626] font-bold">•</span><span>Creators selling digital products</span></li>
+              <li class="flex gap-3"><span class="text-[#DC2626] font-bold">•</span><span>Coaches promoting premium offers</span></li>
+              <li class="flex gap-3"><span class="text-[#DC2626] font-bold">•</span><span>Marketers needing fast turnarounds</span></li>
+              <li class="flex gap-3"><span class="text-[#DC2626] font-bold">•</span><span>Brands optimizing paid traffic</span></li>
+            </ul>
+          </div>
+        </section>
+    
+        <section class="bg-gradient-to-r from-[#DC2626] to-red-500 text-white">
+          <div class="max-w-6xl mx-auto px-6 py-14 flex flex-col lg:flex-row items-center justify-between gap-6">
+            <div class="space-y-3">
+              <h3 class="text-3xl font-bold">Ready to boost your sales?</h3>
+              <p class="text-lg text-red-50">Fast turnaround available.</p>
+            </div>
+            <a href="#" class="bg-white text-[#0F0F0F] font-semibold px-6 py-3 rounded-md shadow-lg">Start Today</a>
+          </div>
+        </section>
+      </main>
+    
+      <footer class="bg-[#0F0F0F] text-white">
+        <div class="max-w-6xl mx-auto px-6 py-6 flex flex-wrap gap-4 text-sm text-gray-300">
+          <a href="#" class="hover:text-white">Privacy</a>
+          <a href="#" class="hover:text-white">Terms</a>
+          <a href="#" class="hover:text-white">Support</a>
+        </div>
+      </footer>
       </div>
     </div>
   </div>
