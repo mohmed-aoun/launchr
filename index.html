@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LaunchR | High-Conversion Landing Pages</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="assets/logo/icon-logo-dark.png" />
+  <style>
+    :root { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <header class="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <img src="assets/logo/icon-logo-transparent.png" alt="LaunchR logo" class="h-11 w-11" />
+        <span class="text-lg" style="font-family: 'Montserrat', 'Inter', sans-serif; font-weight: 700; color: #bae6fd;">LaunchR</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <a href="#samples" class="hover:text-slate-900 transition">Samples</a>
+        <a href="#process" class="hover:text-slate-900 transition">Process</a>
+        <a href="#contact" class="hover:text-slate-900 transition">Contact</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="#contact" class="hidden md:inline-flex items-center px-4 py-2 text-sm font-semibold text-white rounded-xl shadow-md bg-gradient-to-r from-[#369BFA] to-[#0C6CF1] hover:from-[#2f8ae0] hover:to-[#0a5fd3]">Book a Build Call</a>
+        <button class="md:hidden inline-flex items-center px-4 py-2 text-sm font-semibold text-white rounded-xl shadow-md bg-gradient-to-r from-[#369BFA] to-[#0C6CF1] hover:from-[#2f8ae0] hover:to-[#0a5fd3]" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Book</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative overflow-hidden" aria-labelledby="hero-heading">
+      <div class="absolute inset-0 bg-gradient-to-br from-[#051B3F] via-[#031733] to-[#021734]"></div>
+      <div class="relative max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24 lg:py-28 text-white">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-8">
+            <div class="flex items-center gap-3">
+              <div class="h-10 w-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center shadow-lg">
+                <img src="assets/logo/icon-logo-transparent.png" alt="LaunchR circular logo" class="h-7 w-7" />
+              </div>
+              <p class="text-sm uppercase tracking-[0.22em] text-sky-200 font-semibold">LaunchR</p>
+            </div>
+            <div class="space-y-4">
+              <h1 id="hero-heading" class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">Launch-ready pages that look sharp and convert fast.</h1>
+              <p class="text-lg text-sky-100">LaunchR builds premium, conversion-focused landing pages with crisp visuals and ready-to-ship sections so you can go live quickly.</p>
+            </div>
+            <div class="flex flex-wrap items-center gap-4">
+              <a href="#samples" class="inline-flex items-center px-5 py-3 text-sm font-semibold text-white rounded-2xl shadow-lg shadow-sky-900/30 bg-gradient-to-r from-[#369BFA] to-[#0C6CF1] hover:from-[#2f8ae0] hover:to-[#0a5fd3] transition">View Samples</a>
+              <a href="#contact" class="inline-flex items-center px-5 py-3 text-sm font-semibold text-sky-100 border border-sky-200/30 rounded-2xl hover:bg-white/10 transition">Book a Build Call</a>
+            </div>
+            <p class="text-sm text-sky-200">Built from proven conversion frameworks tailored to your offer.</p>
+          </div>
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-6 shadow-2xl shadow-sky-900/40">
+            <div class="aspect-[16/10] rounded-xl bg-slate-900/40 border border-white/10 flex items-center justify-center text-sky-100 text-sm">Preview frame coming soon</div>
+            <div class="mt-6 grid grid-cols-3 gap-3 text-xs text-sky-100">
+              <div class="p-3 rounded-xl bg-white/5 border border-white/10">Fast setup</div>
+              <div class="p-3 rounded-xl bg-white/5 border border-white/10">Conversion-first</div>
+              <div class="p-3 rounded-xl bg-white/5 border border-white/10">Launch-ready</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="samples" class="py-16 sm:py-20 bg-white" aria-labelledby="samples-heading">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="text-center max-w-3xl mx-auto space-y-3">
+          <p class="text-sm font-semibold text-[#0C6CF1] tracking-wide uppercase">Sample Launch-Ready Layouts</p>
+          <h2 id="samples-heading" class="text-3xl sm:text-4xl font-bold text-slate-900">A few layouts we can build</h2>
+          <p class="text-slate-600">Pick a style that matches your brand. We adapt each layout to your offer, messaging, and audience.</p>
+        </div>
+
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <article class="rounded-2xl border border-slate-200 shadow-sm overflow-hidden bg-white">
+            <div class="aspect-[16/10] bg-slate-100 relative">
+              <img src="assets/screenshots/saas.png" alt="Modern SaaS layout screenshot" class="absolute inset-0 h-full w-full object-cover" />
+            </div>
+            <div class="p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-slate-900">Modern SaaS Layout</h3>
+              <p class="text-slate-600">Clean product storytelling with dashboard visuals, feature grids, and pricing clarity.</p>
+              <button data-modal-target="modal-saas" class="text-[#0C6CF1] font-semibold hover:text-[#003EA8]">Preview layout</button>
+            </div>
+          </article>
+
+          <article class="rounded-2xl border border-slate-200 shadow-sm overflow-hidden bg-white">
+            <div class="aspect-[16/10] bg-slate-100 relative">
+              <img src="assets/screenshots/corporate.png" alt="Corporate layout screenshot" class="absolute inset-0 h-full w-full object-cover" />
+            </div>
+            <div class="p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-slate-900">Corporate Authority Layout</h3>
+              <p class="text-slate-600">Boardroom polish with proof, services, and actionable CTAs to drive meetings.</p>
+              <button data-modal-target="modal-corporate" class="text-[#0C6CF1] font-semibold hover:text-[#003EA8]">Preview layout</button>
+            </div>
+          </article>
+
+          <article class="rounded-2xl border border-slate-200 shadow-sm overflow-hidden bg-white">
+            <div class="aspect-[16/10] bg-slate-100 relative">
+              <img src="assets/screenshots/local.png" alt="Local service layout screenshot" class="absolute inset-0 h-full w-full object-cover" />
+            </div>
+            <div class="p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-slate-900">Local Service Layout</h3>
+              <p class="text-slate-600">Trust-building service blocks, social proof, and fast-call CTAs for local offers.</p>
+              <button data-modal-target="modal-local" class="text-[#0C6CF1] font-semibold hover:text-[#003EA8]">Preview layout</button>
+            </div>
+          </article>
+
+          <article class="rounded-2xl border border-slate-200 shadow-sm overflow-hidden bg-white">
+            <div class="aspect-[16/10] bg-slate-100 relative">
+              <img src="assets/screenshots/direct-response.png" alt="Direct response layout screenshot" class="absolute inset-0 h-full w-full object-cover" />
+            </div>
+            <div class="p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-slate-900">Direct Response Funnel</h3>
+              <p class="text-slate-600">Conversion blocks engineered for bold offers, objections, and decisive CTAs.</p>
+              <button data-modal-target="modal-direct-response" class="text-[#0C6CF1] font-semibold hover:text-[#003EA8]">Preview layout</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="py-10 bg-slate-50" aria-labelledby="process-heading">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6">
+        <div class="rounded-2xl border border-slate-200 bg-white shadow-sm px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-3 text-[#0C6CF1] font-semibold text-sm">
+            <span class="h-2.5 w-2.5 rounded-full bg-[#369BFA]"></span>
+            <p id="process-heading" class="uppercase tracking-[0.2em]">How we launch</p>
+          </div>
+          <div class="flex flex-col md:flex-row items-center gap-6 text-sm text-slate-700">
+            <div class="flex items-center gap-2"> <span class="font-semibold text-slate-900">01</span> Share your offer </div>
+            <div class="hidden md:block h-0.5 w-10 bg-slate-200"></div>
+            <div class="flex items-center gap-2"> <span class="font-semibold text-slate-900">02</span> We map the layout </div>
+            <div class="hidden md:block h-0.5 w-10 bg-slate-200"></div>
+            <div class="flex items-center gap-2"> <span class="font-semibold text-slate-900">03</span> You launch clean </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-14 bg-[#031a3b]" aria-labelledby="cta-strip-heading">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-white">
+        <div class="space-y-2 text-center md:text-left">
+          <p class="text-sm uppercase tracking-[0.2em] text-sky-200 font-semibold" id="cta-strip-heading">Ready to launch your next page?</p>
+          <h3 class="text-2xl font-bold">We build sharp, conversion-ready layouts on demand.</h3>
+        </div>
+        <div class="flex flex-wrap justify-center md:justify-end items-center gap-3">
+          <a href="#contact" class="inline-flex items-center px-5 py-3 text-sm font-semibold text-white rounded-2xl shadow-lg shadow-sky-900/30 bg-gradient-to-r from-[#369BFA] to-[#0C6CF1] hover:from-[#2f8ae0] hover:to-[#0a5fd3] transition">Request a Build</a>
+          <a href="#samples" class="inline-flex items-center px-5 py-3 text-sm font-semibold text-sky-100 border border-sky-200/30 rounded-2xl hover:bg-white/10 transition">See More Samples</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="bg-slate-900 text-slate-100 pt-14 pb-8" aria-labelledby="footer-heading">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div class="space-y-4">
+        <div class="flex items-center gap-3">
+          <img src="assets/logo/icon-logo-dark.png" alt="LaunchR logo on dark" class="h-10 w-10" />
+          <div>
+            <img src="assets/logo/launchr-lockup.png" alt="LaunchR wordmark" class="h-6" />
+          </div>
+        </div>
+        <p class="text-sm text-slate-300">LaunchR builds launch-ready landing pages that combine sharp visuals with proven conversion frameworks.</p>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold text-white mb-3">Explore</h4>
+        <div class="flex flex-col gap-2 text-sm text-slate-300">
+          <a href="#" class="hover:text-white">Home</a>
+          <a href="#process" class="hover:text-white">Process</a>
+          <a href="#samples" class="hover:text-white">Samples</a>
+          <a href="#" class="hover:text-white">Terms</a>
+          <a href="#" class="hover:text-white">Privacy</a>
+        </div>
+      </div>
+      <div class="space-y-3">
+        <h4 class="text-sm font-semibold text-white">Contact</h4>
+        <p class="text-sm text-slate-300">hello@launchr.studio</p>
+        <p class="text-sm text-slate-400">Contact form coming soon</p>
+        <a href="#" class="inline-flex w-fit items-center px-4 py-2 text-sm font-semibold text-white rounded-xl shadow-md bg-gradient-to-r from-[#369BFA] to-[#0C6CF1] hover:from-[#2f8ae0] hover:to-[#0a5fd3]">Book a Build Call</a>
+      </div>
+    </div>
+    <div class="mt-10 border-t border-slate-800 pt-4 text-center text-xs text-slate-400">© LaunchR — All rights reserved.</div>
+  </footer>
+
+  <!-- Modals (inject body-only HTML into each *_content container; head/tailwind already loaded) -->
+  <div id="modal-saas" class="fixed inset-0 z-40 hidden items-center justify-center bg-slate-900/70 px-4" role="dialog" aria-modal="true" aria-labelledby="modal-saas-title">
+    <div class="relative w-full max-w-5xl h-[90vh] bg-white rounded-2xl shadow-2xl overflow-hidden">
+      <div class="flex items-center justify-between px-6 py-4 border-b border-slate-200 bg-slate-50">
+        <h3 id="modal-saas-title" class="text-xl font-semibold text-slate-900">Modern SaaS Layout</h3>
+        <button class="text-slate-500 hover:text-slate-900" data-modal-close>&times;</button>
+      </div>
+      <div id="modal-saas-content" class="h-full overflow-auto p-6 text-slate-600">
+        <!-- Inject only the SaaS page body markup here (omit <html>, <head>, and <body>) -->
+        <div class="min-h-screen bg-[#F8FAFC] text-[#0f172a]">
+          <div class="min-h-screen flex flex-col">
+            <header class="bg-white">
+              <div class="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                  <p class="inline-flex items-center text-sm font-semibold text-[#334155] bg-slate-100 rounded-full px-3 py-1 shadow-sm">New experience</p>
+                  <h1 class="text-4xl lg:text-5xl font-semibold text-[#0f172a] leading-tight">Launch faster with a modern SaaS experience.</h1>
+                  <p class="text-lg text-[#334155] max-w-xl">Clean UI, clear messaging, and a frictionless onboarding flow designed to get customers productive in minutes.</p>
+                  <div class="flex gap-4">
+                    <a href="#" class="px-5 py-3 bg-[#3B82F6] text-white font-semibold rounded-lg shadow-lg shadow-blue-200 hover:bg-blue-600 transition">Start Free Trial</a>
+                    <a href="#" class="px-5 py-3 bg-white text-[#334155] font-semibold rounded-lg border border-slate-200 shadow-sm hover:border-blue-400 transition">Book Demo</a>
+                  </div>
+                  <div class="flex items-center gap-3 text-sm text-[#334155]">
+                    <div class="w-10 h-10 rounded-full bg-blue-100 border border-blue-200"></div>
+                    <div>
+                      <p class="font-semibold text-[#0f172a]">Clear onboarding</p>
+                      <p>Guided setup that keeps momentum.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-xl shadow-slate-200 border border-slate-100 p-6">
+                  <div class="flex justify-between items-center mb-4">
+                    <div>
+                      <p class="text-sm text-[#334155]">Dashboard</p>
+                      <p class="text-lg font-semibold text-[#0f172a]">Product performance</p>
+                    </div>
+                    <div class="flex gap-2">
+                      <span class="w-3 h-3 rounded-full bg-green-400"></span>
+                      <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
+                      <span class="w-3 h-3 rounded-full bg-red-400"></span>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-blue-50 rounded-lg p-4 shadow-inner">
+                      <p class="text-sm text-[#334155]">Active users</p>
+                      <p class="text-2xl font-semibold text-[#0f172a]">2,840</p>
+                      <div class="mt-3 h-16 bg-blue-100 rounded-md"></div>
+                    </div>
+                    <div class="bg-slate-50 rounded-lg p-4 shadow-inner">
+                      <p class="text-sm text-[#334155]">Onboarding rate</p>
+                      <p class="text-2xl font-semibold text-[#0f172a]">94%</p>
+                      <div class="mt-3 h-16 bg-slate-200 rounded-md"></div>
+                    </div>
+                    <div class="col-span-2 bg-white rounded-lg p-4 border border-slate-200 shadow-sm">
+                      <div class="flex justify-between items-center mb-2">
+                        <p class="text-sm font-semibold text-[#334155]">Conversion journey</p>
+                        <span class="text-xs text-blue-600 font-semibold">Live</span>
+                      </div>
+                      <div class="h-28 bg-gradient-to-r from-blue-100 via-white to-blue-50 rounded-md shadow-inner"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </header>
+
+            <section class="bg-white border-y border-slate-100">
+              <div class="max-w-6xl mx-auto px-6 py-16">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                  <div class="flex gap-4 items-start bg-slate-50 rounded-xl p-5 shadow-sm">
+                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
+                      <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path d="M4 12h16M12 4v16" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-semibold text-[#0f172a]">Effortless setup</h3>
+                      <p class="text-sm text-[#334155]">Guided flows and defaults that remove guesswork.</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-4 items-start bg-slate-50 rounded-xl p-5 shadow-sm">
+                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
+                      <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-semibold text-[#0f172a]">Fast, modern performance</h3>
+                      <p class="text-sm text-[#334155]">Responsive interactions that keep teams moving.</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-4 items-start bg-slate-50 rounded-xl p-5 shadow-sm">
+                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
+                      <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path d="M12 6v6l4 2" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-semibold text-[#0f172a]">Clear user onboarding</h3>
+                      <p class="text-sm text-[#334155]">Checklists and nudges that clarify each step.</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-4 items-start bg-slate-50 rounded-xl p-5 shadow-sm">
+                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
+                      <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path d="M12 3l9 4-9 4-9-4 9-4zm0 8v10" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-semibold text-[#0f172a]">Secure, reliable infrastructure</h3>
+                      <p class="text-sm text-[#334155]">Encrypted, monitored, and ready for scale.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="bg-[#F8FAFC]">
+              <div class="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-4">
+                  <p class="text-sm font-semibold text-blue-600">Momentum for teams</p>
+                  <h2 class="text-3xl font-semibold text-[#0f172a]">Spend less time configuring and more time growing.</h2>
+                  <p class="text-lg text-[#334155]">Templates, role-aware defaults, and analytics make it easy to launch new products without slowing down your roadmap.</p>
+                  <div class="flex gap-3">
+                    <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs text-[#334155]">Guided setup</span>
+                    <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs text-[#334155]">Team visibility</span>
+                    <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs text-[#334155]">Trusted uptime</span>
+                  </div>
+                </div>
+                <div class="bg-white border border-slate-100 rounded-2xl shadow-lg shadow-slate-200 p-6">
+                  <div class="h-10 w-32 rounded-full bg-blue-100 mb-4"></div>
+                  <div class="grid grid-cols-3 gap-3 mb-4">
+                    <div class="h-16 rounded-lg bg-blue-50 shadow-inner"></div>
+                    <div class="h-16 rounded-lg bg-slate-50 shadow-inner"></div>
+                    <div class="h-16 rounded-lg bg-blue-50 shadow-inner"></div>
+                  </div>
+                  <div class="h-40 rounded-xl bg-gradient-to-br from-blue-50 to-white border border-slate-100 shadow-inner"></div>
+                </div>
+              </div>
+            </section>
+
+            <section class="bg-white border-t border-b border-slate-100">
+              <div class="max-w-6xl mx-auto px-6 py-10">
+                <p class="text-center text-sm text-[#334155] mb-6">Trusted by product-led teams</p>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 items-center text-center text-slate-400">
+                  <span class="text-lg font-semibold">Northwind</span>
+                  <span class="text-lg font-semibold">Vertexio</span>
+                  <span class="text-lg font-semibold">Arclane</span>
+                  <span class="text-lg font-semibold">Metricly</span>
+                  <span class="text-lg font-semibold">Cloudharbor</span>
+                  <span class="text-lg font-semibold">Signalbase</span>
+                </div>
+              </div>
+            </section>
+
+            <section class="bg-[#F8FAFC]">
+              <div class="max-w-6xl mx-auto px-6 py-16">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div class="bg-white border border-slate-100 rounded-2xl shadow-md shadow-slate-200 p-6">
+                    <div class="flex items-center justify-between mb-4">
+                      <h3 class="text-2xl font-semibold text-[#0f172a]">Starter</h3>
+                      <span class="text-sm text-blue-600 font-semibold">Great for early teams</span>
+                    </div>
+                    <p class="text-4xl font-semibold text-[#0f172a]">$38<span class="text-base text-[#334155]">/mo</span></p>
+                    <p class="mt-3 text-[#334155]">Launch core workflows with transparent pricing and quick support.</p>
+                    <ul class="mt-6 space-y-3 text-sm text-[#334155]">
+                      <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span>Up to 5 team spaces</li>
+                      <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span>Email + in-app support</li>
+                      <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span>Guided onboarding checklists</li>
+                    </ul>
+                    <a href="#" class="mt-6 inline-block w-full text-center px-4 py-3 bg-[#3B82F6] text-white rounded-lg font-semibold shadow-md shadow-blue-200 hover:bg-blue-600 transition">Choose Starter</a>
+                  </div>
+                  <div class="bg-white border border-blue-100 rounded-2xl shadow-lg shadow-blue-100 p-6">
+                    <div class="flex items-center justify-between mb-4">
+                      <h3 class="text-2xl font-semibold text-[#0f172a]">Growth</h3>
+                      <span class="text-sm text-blue-600 font-semibold">Perfect for scaling companies</span>
+                    </div>
+                    <p class="text-4xl font-semibold text-[#0f172a]">$89<span class="text-base text-[#334155]">/mo</span></p>
+                    <p class="mt-3 text-[#334155]">Advanced analytics, automation, and security ready for expanding teams.</p>
+                    <ul class="mt-6 space-y-3 text-sm text-[#334155]">
+                      <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span>Unlimited team spaces</li>
+                      <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span>Priority success manager</li>
+                      <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span>Custom roles &amp; SSO</li>
+                    </ul>
+                    <a href="#" class="mt-6 inline-block w-full text-center px-4 py-3 bg-[#0f172a] text-white rounded-lg font-semibold shadow-md shadow-slate-300 hover:bg-[#1f2937] transition">Choose Growth</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="bg-gradient-to-r from-blue-500 to-blue-600 text-white">
+              <div class="max-w-6xl mx-auto px-6 py-14 flex flex-col lg:flex-row items-center justify-between gap-6">
+                <div>
+                  <p class="text-sm font-semibold uppercase tracking-wide text-blue-100">Momentum</p>
+                  <h3 class="text-3xl font-semibold">Ready to launch your SaaS?</h3>
+                  <p class="mt-2 text-blue-100">Invite your team, connect data, and deliver the experience customers expect.</p>
+                </div>
+                <a href="#" class="px-6 py-3 bg-white text-[#0f172a] font-semibold rounded-lg shadow-lg shadow-blue-900/30 hover:shadow-xl hover:-translate-y-0.5 transform transition">Get Started</a>
+              </div>
+            </section>
+
+            <footer class="bg-white">
+              <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col lg:flex-row items-center justify-between gap-4 text-sm text-[#334155]">
+                <p class="text-[#0f172a] font-semibold">SaaS Modern</p>
+                <div class="flex gap-6">
+                  <a href="#" class="hover:text-blue-600">Product</a>
+                  <a href="#" class="hover:text-blue-600">Security</a>
+                  <a href="#" class="hover:text-blue-600">Support</a>
+                  <a href="#" class="hover:text-blue-600">Contact</a>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-corporate" class="fixed inset-0 z-40 hidden items-center justify-center bg-slate-900/70 px-4" role="dialog" aria-modal="true" aria-labelledby="modal-corporate-title">
+    <div class="relative w-full max-w-5xl h-[90vh] bg-white rounded-2xl shadow-2xl overflow-hidden">
+      <div class="flex items-center justify-between px-6 py-4 border-b border-slate-200 bg-slate-50">
+        <h3 id="modal-corporate-title" class="text-xl font-semibold text-slate-900">Corporate Authority Layout</h3>
+        <button class="text-slate-500 hover:text-slate-900" data-modal-close>&times;</button>
+      </div>
+      <div id="modal-corporate-content" class="h-full overflow-auto p-6 text-slate-600">
+        <!-- Inject only the body markup for the corporate layout into #modal-corporate-content -->
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-local" class="fixed inset-0 z-40 hidden items-center justify-center bg-slate-900/70 px-4" role="dialog" aria-modal="true" aria-labelledby="modal-local-title">
+    <div class="relative w-full max-w-5xl h-[90vh] bg-white rounded-2xl shadow-2xl overflow-hidden">
+      <div class="flex items-center justify-between px-6 py-4 border-b border-slate-200 bg-slate-50">
+        <h3 id="modal-local-title" class="text-xl font-semibold text-slate-900">Local Service Layout</h3>
+        <button class="text-slate-500 hover:text-slate-900" data-modal-close>&times;</button>
+      </div>
+      <div id="modal-local-content" class="h-full overflow-auto p-6 text-slate-600">
+        <!-- Inject only the body markup for the local service layout into #modal-local-content -->
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-direct-response" class="fixed inset-0 z-40 hidden items-center justify-center bg-slate-900/70 px-4" role="dialog" aria-modal="true" aria-labelledby="modal-direct-response-title">
+    <div class="relative w-full max-w-5xl h-[90vh] bg-white rounded-2xl shadow-2xl overflow-hidden">
+      <div class="flex items-center justify-between px-6 py-4 border-b border-slate-200 bg-slate-50">
+        <h3 id="modal-direct-response-title" class="text-xl font-semibold text-slate-900">Direct Response Funnel</h3>
+        <button class="text-slate-500 hover:text-slate-900" data-modal-close>&times;</button>
+      </div>
+      <div id="modal-direct-response-content" class="h-full overflow-auto p-6 text-slate-600">
+        <!-- Inject only the body markup for the direct response layout into #modal-direct-response-content -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Modal handling using data attributes
+    const openButtons = document.querySelectorAll('[data-modal-target]');
+    const closeButtons = document.querySelectorAll('[data-modal-close]');
+
+    const openModal = (id) => {
+      const modal = document.getElementById(id);
+      if (modal) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.classList.add('overflow-hidden');
+      }
+    };
+
+    const closeModal = (modal) => {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.classList.remove('overflow-hidden');
+    };
+
+    openButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-modal-target');
+        openModal(targetId);
+      });
+    });
+
+    closeButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const modal = btn.closest('[role="dialog"]');
+        if (modal) closeModal(modal);
+      });
+    });
+
+    document.querySelectorAll('[role="dialog"]').forEach((modal) => {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          closeModal(modal);
+        }
+      });
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('[role="dialog"]:not(.hidden)').forEach((modal) => closeModal(modal));
+      }
+    });
+  </script>
+</body>
+</html>
