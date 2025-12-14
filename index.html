@@ -10,7 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
 
-  <!-- Preload critical hero background (PNG only) -->
+  <!-- Preload critical hero background (AVIF first, PNG fallback) -->
+  <link rel="preload" as="image" href="/assets/hero/hero-background.avif" type="image/avif">
   <link rel="preload" as="image" href="/assets/hero/hero-background.png" type="image/png">
 
   <script src="https://cdn.tailwindcss.com"></script>
@@ -20,6 +21,17 @@
 
   <style>
     :root { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+
+    /* AVIF-first background (falls back to PNG). Does NOT affect layout. */
+    .hero-bg {
+      background-image: image-set(
+        url("/assets/hero/hero-background.avif") type("image/avif"),
+        url("/assets/hero/hero-background.png") type("image/png")
+      );
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   </style>
 </head>
 
@@ -52,11 +64,8 @@
   <main>
     <section class="relative overflow-hidden" aria-labelledby="hero-heading">
       <div class="absolute inset-0">
-        <!-- Background image -->
-        <div
-          class="absolute inset-0 bg-[url('/assets/hero/hero-background.png')] bg-cover bg-center bg-no-repeat"
-          aria-hidden="true"
-        ></div>
+        <!-- Background image (AVIF-first via image-set) -->
+        <div class="absolute inset-0 hero-bg" aria-hidden="true"></div>
 
         <!-- Gradient overlay (keeps contrast + brand feel) -->
         <div
@@ -67,7 +76,6 @@
 
       <div class="relative max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24 lg:py-28 text-white">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
-          <!-- Left -->
           <div class="space-y-8">
             <div class="space-y-4">
               <h1 id="hero-heading" class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
@@ -97,7 +105,6 @@
             <p class="text-sm text-sky-200">Built from proven conversion frameworks tailored to your offer.</p>
           </div>
 
-          <!-- Right -->
           <div class="bg-white/5 border border-white/10 rounded-2xl p-6 shadow-2xl shadow-sky-900/40">
             <div class="rounded-xl bg-slate-900/40 border border-white/10 p-5">
               <div class="flex items-start justify-between gap-6">
@@ -123,7 +130,6 @@
                     <p class="text-sky-100/85">Each page is focused on one goal: getting visitors to reach out, book, or inquire.</p>
                   </div>
                 </li>
-
                 <li class="flex gap-3">
                   <span class="mt-1.5 h-2 w-2 rounded-full bg-sky-300/80 flex-shrink-0"></span>
                   <div>
@@ -131,7 +137,6 @@
                     <p class="text-sky-100/85">Everything you need — nothing you don’t.</p>
                   </div>
                 </li>
-
                 <li class="flex gap-3">
                   <span class="mt-1.5 h-2 w-2 rounded-full bg-sky-300/80 flex-shrink-0"></span>
                   <div>
@@ -139,7 +144,6 @@
                     <p class="text-sky-100/85">These layouts follow patterns used by successful businesses.</p>
                   </div>
                 </li>
-
                 <li class="flex gap-3">
                   <span class="mt-1.5 h-2 w-2 rounded-full bg-sky-300/80 flex-shrink-0"></span>
                   <div>
@@ -157,7 +161,6 @@
                 </svg>
                 <span>Fast setup</span>
               </div>
-
               <div class="flex items-center gap-2 p-3 rounded-xl bg-white/5 border border-white/10">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-sky-300/80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <circle cx="12" cy="12" r="9" stroke-width="2" />
@@ -166,7 +169,6 @@
                 </svg>
                 <span>Conversion-first</span>
               </div>
-
               <div class="flex items-center gap-2 p-3 rounded-xl bg-white/5 border border-white/10">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-sky-300/80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7" />
@@ -174,7 +176,6 @@
                 <span>Launch-ready</span>
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -189,18 +190,22 @@
         </div>
 
         <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Saas -->
           <article class="rounded-2xl border border-slate-200 shadow-sm overflow-hidden bg-white">
             <div class="aspect-[16/10] bg-slate-100 relative">
-              <img
-                src="assets/screenshots/saas.png"
-                alt="Modern SaaS layout screenshot"
-                class="absolute inset-0 h-full w-full object-cover"
-                loading="lazy"
-                decoding="async"
-                fetchpriority="low"
-                width="1600"
-                height="1000"
-              />
+              <picture>
+                <source srcset="assets/screenshots/saas.avif" type="image/avif">
+                <img
+                  src="assets/screenshots/saas.png"
+                  alt="Modern SaaS layout screenshot"
+                  class="absolute inset-0 h-full w-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                  fetchpriority="low"
+                  width="1600"
+                  height="1000"
+                />
+              </picture>
             </div>
             <div class="p-6 space-y-3">
               <h3 class="text-xl font-semibold text-slate-900">Modern SaaS Layout</h3>
@@ -209,18 +214,22 @@
             </div>
           </article>
 
+          <!-- Corporate -->
           <article class="rounded-2xl border border-slate-200 shadow-sm overflow-hidden bg-white">
             <div class="aspect-[16/10] bg-slate-100 relative">
-              <img
-                src="assets/screenshots/corporate.png"
-                alt="Corporate layout screenshot"
-                class="absolute inset-0 h-full w-full object-cover"
-                loading="lazy"
-                decoding="async"
-                fetchpriority="low"
-                width="1600"
-                height="1000"
-              />
+              <picture>
+                <source srcset="assets/screenshots/corporate.avif" type="image/avif">
+                <img
+                  src="assets/screenshots/corporate.png"
+                  alt="Corporate layout screenshot"
+                  class="absolute inset-0 h-full w-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                  fetchpriority="low"
+                  width="1600"
+                  height="1000"
+                />
+              </picture>
             </div>
             <div class="p-6 space-y-3">
               <h3 class="text-xl font-semibold text-slate-900">Corporate Authority Layout</h3>
@@ -229,18 +238,22 @@
             </div>
           </article>
 
+          <!-- Local -->
           <article class="rounded-2xl border border-slate-200 shadow-sm overflow-hidden bg-white">
             <div class="aspect-[16/10] bg-slate-100 relative">
-              <img
-                src="assets/screenshots/local.png"
-                alt="Local service layout screenshot"
-                class="absolute inset-0 h-full w-full object-cover"
-                loading="lazy"
-                decoding="async"
-                fetchpriority="low"
-                width="1600"
-                height="1000"
-              />
+              <picture>
+                <source srcset="assets/screenshots/local.avif" type="image/avif">
+                <img
+                  src="assets/screenshots/local.png"
+                  alt="Local service layout screenshot"
+                  class="absolute inset-0 h-full w-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                  fetchpriority="low"
+                  width="1600"
+                  height="1000"
+                />
+              </picture>
             </div>
             <div class="p-6 space-y-3">
               <h3 class="text-xl font-semibold text-slate-900">Local Service Layout</h3>
@@ -249,18 +262,22 @@
             </div>
           </article>
 
+          <!-- Direct response -->
           <article class="rounded-2xl border border-slate-200 shadow-sm overflow-hidden bg-white">
             <div class="aspect-[16/10] bg-slate-100 relative">
-              <img
-                src="assets/screenshots/directresponse.png"
-                alt="Direct response layout screenshot"
-                class="absolute inset-0 h-full w-full object-cover"
-                loading="lazy"
-                decoding="async"
-                fetchpriority="low"
-                width="1600"
-                height="1000"
-              />
+              <picture>
+                <source srcset="assets/screenshots/directresponse.avif" type="image/avif">
+                <img
+                  src="assets/screenshots/directresponse.png"
+                  alt="Direct response layout screenshot"
+                  class="absolute inset-0 h-full w-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                  fetchpriority="low"
+                  width="1600"
+                  height="1000"
+                />
+              </picture>
             </div>
             <div class="p-6 space-y-3">
               <h3 class="text-xl font-semibold text-slate-900">Direct Response Funnel</h3>
@@ -323,7 +340,7 @@
     </section>
 
     <section class="relative py-14 overflow-hidden" aria-labelledby="cta-strip-heading">
-      <div class="absolute inset-0 bg-[url('/assets/hero/hero-background.png')] bg-cover bg-center bg-no-repeat" aria-hidden="true"></div>
+      <div class="absolute inset-0 hero-bg" aria-hidden="true"></div>
       <div class="absolute inset-0 bg-[#031a3b]/85" aria-hidden="true"></div>
 
       <div class="relative max-w-5xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-white">
@@ -345,11 +362,12 @@
       <div class="space-y-4">
         <div class="flex items-center gap-3">
           <img
-            src="assets/logo/icon-logo-dark.png"
+            src="assets/logo/logo-wordmark-transparent.png"
             alt="LaunchR logo on dark"
-            class="h-10 w-10"
+            class="h-10 w-10 scale-150"
             loading="lazy"
             decoding="async"
+            fetchpriority="low"
           />
         </div>
         <p class="text-sm text-slate-300">LaunchR builds launch-ready landing pages that combine sharp visuals with proven conversion frameworks.</p>
