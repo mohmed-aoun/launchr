@@ -28,6 +28,10 @@
   <style>
     :root { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     /* AVIF-first background (falls back to PNG). Does NOT affect layout. */
     .hero-bg {
       background-image: image-set(
@@ -62,7 +66,7 @@
         <a href="https://wa.link/lmxz6o" target="_blank" class="hover:text-slate-900 transition">Contact</a>
       </nav>
       <div class="flex items-center gap-3">
-        <a href="https://wa.link/lmxz6o" target="_blank" class="hidden md:inline-flex items-center px-4 py-2 text-sm font-semibold text-white rounded-xl shadow-md bg-gradient-to-r from-[#369BFA] to-[#0C6CF1] hover:from-[#2f8ae0] hover:to-[#0a5fd3]">Book a Build Call</a>
+        <a href="/book.html" target="_blank" class="hidden md:inline-flex items-center px-4 py-2 text-sm font-semibold text-white rounded-xl shadow-md bg-gradient-to-r from-[#369BFA] to-[#0C6CF1] hover:from-[#2f8ae0] hover:to-[#0a5fd3]">Book a Build Call</a>
         <button class="md:hidden inline-flex items-center px-4 py-2 text-sm font-semibold text-white rounded-xl shadow-md bg-gradient-to-r from-[#369BFA] to-[#0C6CF1] hover:from-[#2f8ae0] hover:to-[#0a5fd3]" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Book</button>
       </div>
     </div>
@@ -101,7 +105,7 @@
                 View Portfolio Offering
               </a>
               <a
-                href="https://wa.link/lmxz6o"
+                href="/book.html"
                 target="_blank"
                 class="inline-flex items-center px-5 py-3 text-sm font-semibold text-sky-100 border border-sky-200/30 rounded-2xl hover:bg-white/10 transition"
               >
@@ -198,95 +202,226 @@
 
     <section id="portfolios" class="py-16 sm:py-20 bg-white" aria-labelledby="portfolios-heading">
       <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+        <!-- Section header -->
         <div class="text-center max-w-3xl mx-auto space-y-3">
           <p class="text-sm font-semibold text-[#0C6CF1] tracking-wide uppercase">
-            Portfolio Websites
+            Portfolio Archetypes
           </p>
           <h2 id="portfolios-heading" class="text-3xl sm:text-4xl font-bold text-slate-900">
-            A few portfolio examples
+            Proven portfolio formats for different goals
           </h2>
           <p class="text-slate-600">
-            Each portfolio is built to help recruiters or clients quickly understand role, skills, and outcomes.
+            Each layout is designed around how recruiters and clients actually evaluate work.
           </p>
         </div>
 
+        <!-- Grid -->
         <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- Portfolio Sample 1 -->
-          <article class="rounded-2xl border border-slate-200 shadow-sm overflow-hidden bg-white">
-            <div class="aspect-[16/10] bg-slate-100 relative flex items-center justify-center">
-              <!-- Placeholder image -->
-              <span class="text-sm text-slate-400">
-                Portfolio sample image
-              </span>
-              <picture>
-                <source srcset="assets/screenshots/jen.webp" type="image/webp">
-                <img
-                  src="assets/screenshots/jen.webp"
-                  alt="Portfolio website sample"
+
+          <!-- Sample 1 -->
+          <article class="group rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition">
+            <div class="aspect-[16/10] relative bg-slate-100">
+              <img src="assets/screenshots/sample1.webp"
+                  alt="Hiring-focused portfolio example"
                   class="absolute inset-0 h-full w-full object-cover"
-                  loading="lazy"
-                  decoding="async"
-                  width="1600"
-                  height="1000"
-                />
-              </picture>
+                  loading="lazy">
             </div>
+
             <div class="p-6 space-y-3">
               <h3 class="text-xl font-semibold text-slate-900">
-                Hiring-focused portfolio
+                Get evaluated quickly for full-time or contract roles
               </h3>
-              <p class="text-slate-600">
-                Built for recruiter review with clear role definition, shipped work, and fast scannability.
+
+              <p class="text-sm text-slate-600">
+                For designers, engineers, and product roles applying to teams that care about judgment and reliability.
               </p>
+
+              <!-- Progressive depth -->
+              <div class="text-sm text-slate-500 pt-2
+                opacity-0 max-h-0 overflow-hidden
+                transition-all duration-300 ease-out
+                group-hover:opacity-100 group-hover:max-h-24">
+                Focuses on role clarity, ownership, and real decision-making instead of visuals or personal branding.
+              </div>
+
               <a
                 target="_blank"
-                href="https://jenxsocial.vercel.app/"
-                class="inline-flex items-center px-4 py-2 text-sm font-semibold text-[#0C6CF1] border border-slate-200 rounded-xl hover:bg-slate-50 transition"
+                href="https://sample1-hiring-focused.vercel.app/"
+                class="inline-flex items-center gap-1 text-sm font-semibold text-[#0C6CF1] leading-none"
               >
-                View portfolio sample
+                <span>View sample</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="h-4 w-4"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M5 12h14M13 6l6 6-6 6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </a>
             </div>
           </article>
 
-          <!-- Portfolio Sample 2 -->
-          <article class="rounded-2xl border border-slate-200 shadow-sm overflow-hidden bg-white">
-            <div class="aspect-[16/10] bg-slate-100 relative flex items-center justify-center">
-              <!-- Placeholder image -->
-              <span class="text-sm text-slate-400">
-                Portfolio sample image
-              </span>
-              <picture>
-                <source srcset="assets/screenshots/oxt.webp" type="image/webp">
-                <img
-                  src="assets/screenshots/oxt.webp"
-                  alt="Portfolio website sample"
+          <!-- Sample 2 -->
+          <article class="group rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition">
+            <div class="aspect-[16/10] relative bg-slate-100">
+              <img src="assets/screenshots/sample2.webp"
+                  alt="Client-focused portfolio example"
                   class="absolute inset-0 h-full w-full object-cover"
-                  loading="lazy"
-                  decoding="async"
-                  width="1600"
-                  height="1000"
-                />
-              </picture>
+                  loading="lazy">
             </div>
+
             <div class="p-6 space-y-3">
               <h3 class="text-xl font-semibold text-slate-900">
-                Client-focused portfolio
+                Convert inbound leads without sales calls
               </h3>
-              <p class="text-slate-600">
-                Built to establish credibility, show judgment, and guide clients toward the next step.
+
+              <p class="text-sm text-slate-600">
+                For freelancers and consultants who want fewer, better-fit clients.
               </p>
+
+              <div class="text-sm text-slate-500 pt-2
+                opacity-0 max-h-0 overflow-hidden
+                transition-all duration-300 ease-out
+                group-hover:opacity-100 group-hover:max-h-24">
+                Uses product-led positioning, visible proof, and risk reducers to guide clients to the next step.
+              </div>
               <a
                 target="_blank"
-                href="https://otx-dave.vercel.app/"
-                class="inline-flex items-center px-4 py-2 text-sm font-semibold text-[#0C6CF1] border border-slate-200 rounded-xl hover:bg-slate-50 transition"
+                href="https://sample2-client-focused.vercel.app/"
+                class="inline-flex items-center gap-1 text-sm font-semibold text-[#0C6CF1] leading-none"
               >
-                View portfolio sample
+                <span>View sample</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="h-4 w-4"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M5 12h14M13 6l6 6-6 6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Sample 3 -->
+          <article class="group rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition">
+            <div class="aspect-[16/10] relative bg-slate-100">
+              <img src="assets/screenshots/sample3.webp"
+                  alt="Low-proof portfolio example"
+                  class="absolute inset-0 h-full w-full object-cover"
+                  loading="lazy">
+            </div>
+
+            <div class="p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-slate-900">
+                Win clients even with limited past work
+              </h3>
+
+              <p class="text-sm text-slate-600">
+                For early-stage freelancers with 2–3 projects who still need to look credible.
+              </p>
+
+              <div class="text-sm text-slate-500 pt-2
+                opacity-0 max-h-0 overflow-hidden
+                transition-all duration-300 ease-out
+                group-hover:opacity-100 group-hover:max-h-24">
+                Reframes work through context, ownership, and process instead of volume or inflated metrics.
+              </div>
+
+              <a
+                target="_blank"
+                href="https://sample3-low-proof.vercel.app/"
+                class="inline-flex items-center gap-1 text-sm font-semibold text-[#0C6CF1] leading-none"
+              >
+                <span>View sample</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="h-4 w-4"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M5 12h14M13 6l6 6-6 6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Sample 4 -->
+          <article class="group rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition">
+            <div class="aspect-[16/10] relative bg-slate-100">
+              <img src="assets/screenshots/sample4.webp"
+                  alt="SaaS-focused developer portfolio example"
+                  class="absolute inset-0 h-full w-full object-cover"
+                  loading="lazy">
+            </div>
+
+            <div class="p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-slate-900">
+                Attract serious SaaS clients who value execution
+              </h3>
+
+              <p class="text-sm text-slate-600">
+                For freelance developers working with technically informed startup teams.
+              </p>
+
+              <div class="text-sm text-slate-500 pt-2
+                opacity-0 max-h-0 overflow-hidden
+                transition-all duration-300 ease-out
+                group-hover:opacity-100 group-hover:max-h-24">
+                Emphasizes technical ownership, constraints, and proof-first signals over generic claims.
+              </div>
+
+              <a
+                target="_blank"
+                href="https://sample4-nich-specific-saas.vercel.app/"
+                class="inline-flex items-center gap-1 text-sm font-semibold text-[#0C6CF1] leading-none"
+              >
+                <span>View sample</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="h-4 w-4"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M5 12h14M13 6l6 6-6 6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </a>
             </div>
           </article>
         </div>
       </div>
     </section>
+
 
 
     <section id="process" class="relative py-10 bg-slate-50" aria-labelledby="process-heading">
@@ -349,7 +484,7 @@
           <h3 class="text-2xl font-bold">We build sharp, conversion-ready layouts on demand.</h3>
         </div>
         <div class="flex flex-wrap justify-center md:justify-end items-center gap-3">
-          <a href="https://wa.link/lmxz6o" target="_blank" class="inline-flex items-center px-5 py-3 text-sm font-semibold text-white rounded-2xl shadow-lg shadow-sky-900/30 bg-gradient-to-r from-[#369BFA] to-[#0C6CF1] hover:from-[#2f8ae0] hover:to-[#0a5fd3] transition">Request a Build</a>
+          <a href="/book.html" target="_blank" class="inline-flex items-center px-5 py-3 text-sm font-semibold text-white rounded-2xl shadow-lg shadow-sky-900/30 bg-gradient-to-r from-[#369BFA] to-[#0C6CF1] hover:from-[#2f8ae0] hover:to-[#0a5fd3] transition">Request a Build</a>
           <a href="#samples" class="inline-flex items-center px-5 py-3 text-sm font-semibold text-sky-100 border border-sky-200/30 rounded-2xl hover:bg-white/10 transition">See More Samples</a>
         </div>
       </div>
@@ -384,63 +519,11 @@
         <h4 class="text-sm font-semibold text-white">Contact</h4>
         <a href="mailto:mohmedaoun29@gmail.com" class="text-sm text-slate-300">mohmedaoun29@gmail.com</a>
         <p class="text-sm text-slate-400">Contact form coming soon</p>
-        <a href="https://wa.link/lmxz6o" target="_blank" class="inline-flex w-fit items-center px-4 py-2 text-sm font-semibold text-white rounded-xl shadow-md bg-gradient-to-r from-[#369BFA] to-[#0C6CF1] hover:from-[#2f8ae0] hover:to-[#0a5fd3]">Book a Build Call</a>
+        <a href="/book.html" target="_blank" class="inline-flex w-fit items-center px-4 py-2 text-sm font-semibold text-white rounded-xl shadow-md bg-gradient-to-r from-[#369BFA] to-[#0C6CF1] hover:from-[#2f8ae0] hover:to-[#0a5fd3]">Book a Build Call</a>
       </div>
     </div>
     <div class="mt-10 border-t border-slate-800 pt-4 text-center text-xs text-slate-400">© LaunchR — All rights reserved.</div>
   </footer>
-
-  <div id="modals-root"></div>
-
-  <script>
-    fetch('modals.html')
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById('modals-root').innerHTML = html;
-      });
-  </script>
-
-  <script>
-    function openModal(id) {
-      const modal = document.getElementById(id);
-      if (!modal) return;
-      modal.classList.remove('hidden');
-      modal.classList.add('flex');
-      document.body.classList.add('overflow-hidden');
-    }
-
-    function closeModal(modal) {
-      modal.classList.add('hidden');
-      modal.classList.remove('flex');
-      document.body.classList.remove('overflow-hidden');
-    }
-
-    document.addEventListener('click', (e) => {
-      const openBtn = e.target.closest('[data-modal-target]');
-      if (openBtn) {
-        openModal(openBtn.getAttribute('data-modal-target'));
-        return;
-      }
-
-      const closeBtn = e.target.closest('[data-modal-close]');
-      if (closeBtn) {
-        const modal = closeBtn.closest('[role="dialog"]');
-        if (modal) closeModal(modal);
-        return;
-      }
-
-      const backdrop = e.target.closest('[role="dialog"]');
-      if (backdrop && e.target === backdrop) {
-        closeModal(backdrop);
-      }
-    });
-
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        document.querySelectorAll('[role="dialog"]:not(.hidden)').forEach(closeModal);
-      }
-    });
-  </script>
 
   <script>
     document.addEventListener('click', (e) => {
@@ -454,6 +537,11 @@
       }
     });
   </script>
+
+  <script
+    src="https://assets.calendly.com/assets/external/widget.js"
+    async
+  ></script>
 
   <script defer src="/_vercel/insights/script.js"></script>
   <script defer src="/_vercel/speed-insights/script.js"></script>
