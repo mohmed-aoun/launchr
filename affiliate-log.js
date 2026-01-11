@@ -27,6 +27,8 @@
     status: 'pending'
   };
 
+  console.log('Payload being sent:', payload);
+
   // 🔥 Fire-and-forget form submit (NO CORS)
   const form = document.createElement('form');
   form.method = 'POST';
