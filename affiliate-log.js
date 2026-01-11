@@ -1,28 +1,40 @@
 (function () {
   const meta = document.querySelector('meta[name="sheets-endpoint"]');
-  const SHEETS_ENDPOINT = meta && meta.content;
+  const endpoint = meta && meta.content;
 
-  if (!SHEETS_ENDPOINT) {
+  if (!endpoint) {
     console.error('❌ Sheets endpoint missing');
     return;
   }
 
   const params = new URLSearchParams(window.location.search);
 
-  const data = new URLSearchParams({
-    invitee_name: params.get('invitee_name') || '',
-    invitee_email: params.get('invitee_email') || '',
+  const payload = {
+    invitee_name: params.get('name') || '',
+    invitee_email: params.get('email') || '',
     event_type: params.get('event_type_name') || '',
     event_start: params.get('event_start_time') || '',
     affiliate_ref: localStorage.getItem('affiliate_ref') || 'direct',
     booked_at: new Date().toISOString(),
     secret: 'launchr_v1_2024'
+  };
+
+  // 🔥 Fire-and-forget form submit (NO CORS)
+  const form = document.createElement('form');
+  form.method = 'POST';
+  form.action = endpoint;
+  form.style.display = 'none';
+
+  Object.entries(payload).forEach(([key, value]) => {
+    const input = document.createElement('input');
+    input.type = 'hidden';
+    input.name = key;
+    input.value = value;
+    form.appendChild(input);
   });
 
-  fetch(SHEETS_ENDPOINT, {
-    method: 'POST',
-    body: data
-  })
-    .then(() => console.log('✅ Booking logged to Sheets'))
-    .catch(err => console.error('❌ Sheet logging failed', err));
+  document.body.appendChild(form);
+  form.submit();
+
+  console.log('✅ Booking sent to Sheets (fire-and-forget)');
 })();
