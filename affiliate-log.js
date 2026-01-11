@@ -21,7 +21,7 @@
     event_start: params.get('event_start_time'),
 
     affiliate_ref:
-      params.get('utm_source') || localStorage.getItem('affiliate_ref') || 'direct',
+      params.get('utm_campaign') || localStorage.getItem('affiliate_ref') || 'direct',
 
     booked_at: new Date().toISOString(),
     status: 'pending'
