@@ -31,6 +31,7 @@
   const form = document.createElement('form');
   form.method = 'POST';
   form.action = endpoint;
+  form.target = 'hidden_iframe';
   form.style.display = 'none';
 
   Object.entries(payload).forEach(([key, value]) => {
