@@ -525,23 +525,12 @@
     <div class="mt-10 border-t border-slate-800 pt-4 text-center text-xs text-slate-400">© LaunchR — All rights reserved.</div>
   </footer>
 
-  <script>
-    document.addEventListener('click', (e) => {
-      const modal = e.target.closest('[role="dialog"]');
-      if (!modal) return;
-
-      const link = e.target.closest('a');
-      if (link) {
-        e.preventDefault();
-        e.stopPropagation();
-      }
-    });
-  </script>
-
   <script
     src="https://assets.calendly.com/assets/external/widget.js"
     async
   ></script>
+
+  <script src="/affiliate.js" defer></script>
 
   <script defer src="/_vercel/insights/script.js"></script>
   <script defer src="/_vercel/speed-insights/script.js"></script>
