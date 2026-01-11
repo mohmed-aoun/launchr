@@ -1,5 +1,6 @@
 (function () {
-  const SHEETS_ENDPOINT = window.NEXT_PUBLIC_SHEETS_ENDPOINT;
+  const meta = document.querySelector('meta[name="sheets-endpoint"]');
+  const SHEETS_ENDPOINT = meta && meta.content;
 
   if (!SHEETS_ENDPOINT) {
     console.error('❌ Sheets endpoint missing');
@@ -22,10 +23,6 @@
     method: 'POST',
     body: data
   })
-    .then(() => {
-      console.log('✅ Booking logged to Sheets');
-    })
-    .catch(err => {
-      console.error('❌ Sheet logging failed', err);
-    });
+    .then(() => console.log('✅ Booking logged to Sheets'))
+    .catch(err => console.error('❌ Sheet logging failed', err));
 })();
