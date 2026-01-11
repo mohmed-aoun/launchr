@@ -10,13 +10,21 @@
   const params = new URLSearchParams(window.location.search);
 
   const payload = {
-    invitee_name: params.get('name') || '',
-    invitee_email: params.get('email') || '',
-    event_type: params.get('event_type_name') || '',
-    event_start: params.get('event_start_time') || '',
-    affiliate_ref: localStorage.getItem('affiliate_ref') || 'direct',
+    secret: 'launchr_v1_2024',
+
+    invitee_name:
+      params.get('invitee_full_name') ||
+      `${params.get('invitee_first_name') || ''} ${params.get('invitee_last_name') || ''}`.trim(),
+
+    invitee_email: params.get('invitee_email'),
+    event_type: params.get('event_type_name'),
+    event_start: params.get('event_start_time'),
+
+    affiliate_ref:
+      params.get('utm_source') || localStorage.getItem('affiliate_ref') || 'direct',
+
     booked_at: new Date().toISOString(),
-    secret: 'launchr_v1_2024'
+    status: 'pending'
   };
 
   // 🔥 Fire-and-forget form submit (NO CORS)
