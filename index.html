@@ -66,8 +66,45 @@
         <a href="https://wa.link/lmxz6o" target="_blank" class="hover:text-slate-900 transition">Contact</a>
       </nav>
       <div class="flex items-center gap-3">
-        <a href="/book.html" target="_blank" class="hidden md:inline-flex items-center px-4 py-2 text-sm font-semibold text-white rounded-xl shadow-md bg-gradient-to-r from-[#369BFA] to-[#0C6CF1] hover:from-[#2f8ae0] hover:to-[#0a5fd3]">Book a Build Call</a>
-        <button class="md:hidden inline-flex items-center px-4 py-2 text-sm font-semibold text-white rounded-xl shadow-md bg-gradient-to-r from-[#369BFA] to-[#0C6CF1] hover:from-[#2f8ae0] hover:to-[#0a5fd3]" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Book</button>
+        <a
+          href="/book.html"
+          target="_blank"
+          class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white rounded-xl
+                shadow-[0_10px_25px_rgba(12,108,241,0.22)]
+                bg-gradient-to-r from-[#369BFA] to-[#0C6CF1]
+                border border-[#0C6CF1]/25
+                hover:shadow-[0_14px_32px_rgba(12,108,241,0.28)]
+                hover:-translate-y-0.5 hover:from-[#2f8ae0] hover:to-[#0a5fd3]
+                active:translate-y-0 active:shadow-[0_8px_18px_rgba(12,108,241,0.22)]
+                transition-all duration-200"
+        >
+          <img
+            src="assets/icons/calendar.svg"
+            alt=""
+            class="h-4 w-4 opacity-95"
+            loading="lazy"
+            decoding="async"
+          />
+          <span>Book a Build Call</span>
+        </a>
+
+        <button
+          class="md:hidden inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white rounded-xl
+                shadow-[0_10px_25px_rgba(12,108,241,0.22)]
+                bg-gradient-to-r from-[#369BFA] to-[#0C6CF1]
+                border border-[#0C6CF1]/25
+                hover:shadow-[0_14px_32px_rgba(12,108,241,0.28)]
+                hover:-translate-y-0.5 hover:from-[#2f8ae0] hover:to-[#0a5fd3]
+                active:translate-y-0 transition-all duration-200"
+          onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
+        >
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M8 2v3M16 2v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M3.5 9h17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M6 5h12a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+          <span>Book</span>
+        </button>
       </div>
     </div>
   </header>
@@ -519,7 +556,27 @@
         <h4 class="text-sm font-semibold text-white">Contact</h4>
         <a href="mailto:mohmedaoun29@gmail.com" class="text-sm text-slate-300">mohmedaoun29@gmail.com</a>
         <p class="text-sm text-slate-400">Contact form coming soon</p>
-        <a href="/book.html" target="_blank" class="inline-flex w-fit items-center px-4 py-2 text-sm font-semibold text-white rounded-xl shadow-md bg-gradient-to-r from-[#369BFA] to-[#0C6CF1] hover:from-[#2f8ae0] hover:to-[#0a5fd3]">Book a Build Call</a>
+        <a
+          href="/book.html"
+          target="_blank"
+          class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white rounded-xl
+                shadow-[0_10px_25px_rgba(12,108,241,0.22)]
+                bg-gradient-to-r from-[#369BFA] to-[#0C6CF1]
+                border border-[#0C6CF1]/25
+                hover:shadow-[0_14px_32px_rgba(12,108,241,0.28)]
+                hover:-translate-y-0.5 hover:from-[#2f8ae0] hover:to-[#0a5fd3]
+                active:translate-y-0 active:shadow-[0_8px_18px_rgba(12,108,241,0.22)]
+                transition-all duration-200"
+        >
+          <img
+            src="assets/icons/calendar.svg"
+            alt=""
+            class="h-4 w-4 opacity-95"
+            loading="lazy"
+            decoding="async"
+          />
+          <span>Book a Build Call</span>
+        </a>
       </div>
     </div>
     <div class="mt-10 border-t border-slate-800 pt-4 text-center text-xs text-slate-400">© LaunchR — All rights reserved.</div>
@@ -530,7 +587,7 @@
     async
   ></script>
 
-  <script src="/affiliate.js" defer></script>
+  <script src="/js/affiliate.js" defer></script>
 
   <script defer src="/_vercel/insights/script.js"></script>
   <script defer src="/_vercel/speed-insights/script.js"></script>
